@@ -6,7 +6,20 @@ import { heroes } from "../data/heroes";
  */
 export const promisesComponent = ( element ) => {
 
-    console.log('promisesComponent');
+    
+    const renderHero = ( hero ) => {
+        element.innerHTML = hero.name;
+    }
+
+    const renderError = ( error ) => {
+        element.innerHTML = `
+            <h3>${ error } </h3>
+        `
+    }
+    const id1 = '5d86371f97c29d020f1e1f6d';
+    findHero( id1 )
+        .then( renderHero )
+        .catch( renderError );
 }
 
 /**
