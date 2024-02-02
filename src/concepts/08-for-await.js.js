@@ -5,7 +5,7 @@ import { heroes } from '../data/heroes';
  */
 export const forAwaitComponent = async( element ) => {
 
-    const id = '5d86371f97c29d020f1e1f6d';
+    const id = '5d86371fd55e2e2a30fe1ccb2';
 
     if (await getHeroAsync(id) ) {
         element.innerHTML = 'Si existe';
