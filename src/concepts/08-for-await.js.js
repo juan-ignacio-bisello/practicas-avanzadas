@@ -5,7 +5,7 @@ import { heroes } from '../data/heroes';
  */
 export const forAwaitComponent = async( element ) => {
 
-    const id = '5d86371f9f80b591f499df32';
+    const id = '5d86371f1efebc31def272e2';
     const heroIds = heroes.map( hero => hero.id );
 
     const heroPromises = getHeroesAsync( heroIds );
